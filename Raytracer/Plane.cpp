@@ -14,9 +14,9 @@ Plane::Plane(const Vec3& fixedPoint, const Vec3& normal, const Color4f& color)
 	color(color)
 {}
 
-AxisAlignedBoundingBox Plane::axisAlignedBoundingBox() const
+AABB Plane::AABB() const
 {
-	return AxisAlignedBoundingBox();
+	return AABB();
 }
 
 bool Plane::hit(const Ray& ray,

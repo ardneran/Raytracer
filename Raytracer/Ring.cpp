@@ -20,9 +20,9 @@ Ring::Ring(const Vec3& center,
 	color(color)
 {}
 
-AxisAlignedBoundingBox Ring::axisAlignedBoundingBox() const
+AABB Ring::AABB() const
 {
-	return AxisAlignedBoundingBox();
+	return AABB();
 }
 
 bool Ring::hit(const Ray& ray,

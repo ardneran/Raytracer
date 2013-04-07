@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A203427E1711525C000B6E4A /* SolidNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A203427C1711525B000B6E4A /* SolidNoise.cpp */; };
 		A20B1D851707E09B003C2907 /* DynamicArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A20B1D831707E09B003C2907 /* DynamicArray.cpp */; };
 		A20B1D8E1708190E003C2907 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A20B1D8C1708190E003C2907 /* Random.cpp */; };
 		A20B1D9117081CFB003C2907 /* Ray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A20B1D8F17081CFB003C2907 /* Ray.cpp */; };
@@ -14,7 +15,7 @@
 		A20B1D97170821F8003C2907 /* HitRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A20B1D95170821F8003C2907 /* HitRecord.cpp */; };
 		A20B1D9A170822BB003C2907 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A20B1D98170822BB003C2907 /* Triangle.cpp */; };
 		A20B1D9E170823F8003C2907 /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A20B1D9C170823F8003C2907 /* Sphere.cpp */; };
-		A20B1DA1170826E5003C2907 /* AxisAlignedBoundingBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A20B1D9F170826E5003C2907 /* AxisAlignedBoundingBox.cpp */; };
+		A20B1DA1170826E5003C2907 /* AABB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A20B1D9F170826E5003C2907 /* AABB.cpp */; };
 		A22382991706C6F2001AE20A /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A22382981706C6F2001AE20A /* Color.cpp */; };
 		A239DEC5170AA10300081951 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A239DEC3170AA10300081951 /* Camera.cpp */; };
 		A253515E1709090600C57A56 /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A253515C1709090600C57A56 /* Plane.cpp */; };
@@ -23,8 +24,9 @@
 		A25708871706C5C10013FB91 /* Source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A25708861706C5C10013FB91 /* Source.cpp */; };
 		A2771F241706CBF200BF28F0 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2771F231706CBF100BF28F0 /* Vector.cpp */; };
 		A2771F271706CC3A00BF28F0 /* Matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2771F261706CC3A00BF28F0 /* Matrix.cpp */; };
+		A2D7704B17100EFC00390A3B /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D7704917100EFC00390A3B /* Sample.cpp */; };
 		A2F789E917076A30000AA2AA /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2F789E717076A30000AA2AA /* Image.cpp */; };
-		A2F789EC1707AB67000AA2AA /* OrthonormalBasis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2F789EA1707AB67000AA2AA /* OrthonormalBasis.cpp */; };
+		A2F789EC1707AB67000AA2AA /* ONB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2F789EA1707AB67000AA2AA /* ONB.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A203427C1711525B000B6E4A /* SolidNoise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SolidNoise.cpp; sourceTree = "<group>"; };
+		A203427D1711525C000B6E4A /* SolidNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolidNoise.h; sourceTree = "<group>"; };
 		A20B1D831707E09B003C2907 /* DynamicArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DynamicArray.cpp; sourceTree = "<group>"; };
 		A20B1D841707E09B003C2907 /* DynamicArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicArray.h; sourceTree = "<group>"; };
 		A20B1D8C1708190E003C2907 /* Random.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Random.cpp; sourceTree = "<group>"; };
@@ -54,8 +58,8 @@
 		A20B1D99170822BB003C2907 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
 		A20B1D9C170823F8003C2907 /* Sphere.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sphere.cpp; sourceTree = "<group>"; };
 		A20B1D9D170823F8003C2907 /* Sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sphere.h; sourceTree = "<group>"; };
-		A20B1D9F170826E5003C2907 /* AxisAlignedBoundingBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AxisAlignedBoundingBox.cpp; sourceTree = "<group>"; };
-		A20B1DA0170826E5003C2907 /* AxisAlignedBoundingBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxisAlignedBoundingBox.h; sourceTree = "<group>"; };
+		A20B1D9F170826E5003C2907 /* AABB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AABB.cpp; sourceTree = "<group>"; };
+		A20B1DA0170826E5003C2907 /* AABB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABB.h; sourceTree = "<group>"; };
 		A22382971706C6F2001AE20A /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		A22382981706C6F2001AE20A /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Color.cpp; sourceTree = "<group>"; };
 		A226FC191708F4BC00FEE300 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -73,10 +77,12 @@
 		A2771F231706CBF100BF28F0 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
 		A2771F251706CC3A00BF28F0 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
 		A2771F261706CC3A00BF28F0 /* Matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix.cpp; sourceTree = "<group>"; };
+		A2D7704917100EFC00390A3B /* Sample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sample.cpp; sourceTree = "<group>"; };
+		A2D7704A17100EFC00390A3B /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
 		A2F789E717076A30000AA2AA /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
 		A2F789E817076A30000AA2AA /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
-		A2F789EA1707AB67000AA2AA /* OrthonormalBasis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrthonormalBasis.cpp; sourceTree = "<group>"; };
-		A2F789EB1707AB67000AA2AA /* OrthonormalBasis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrthonormalBasis.h; sourceTree = "<group>"; };
+		A2F789EA1707AB67000AA2AA /* ONB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ONB.cpp; sourceTree = "<group>"; };
+		A2F789EB1707AB67000AA2AA /* ONB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONB.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +134,8 @@
 		A25708851706C5C10013FB91 /* Raytracer */ = {
 			isa = PBXGroup;
 			children = (
-				A20B1D9F170826E5003C2907 /* AxisAlignedBoundingBox.cpp */,
-				A20B1DA0170826E5003C2907 /* AxisAlignedBoundingBox.h */,
+				A20B1D9F170826E5003C2907 /* AABB.cpp */,
+				A20B1DA0170826E5003C2907 /* AABB.h */,
 				A22382981706C6F2001AE20A /* Color.cpp */,
 				A22382971706C6F2001AE20A /* Color.h */,
 				A20B1D831707E09B003C2907 /* DynamicArray.cpp */,
@@ -141,8 +147,8 @@
 				A2F789E817076A30000AA2AA /* Image.h */,
 				A2771F261706CC3A00BF28F0 /* Matrix.cpp */,
 				A2771F251706CC3A00BF28F0 /* Matrix.h */,
-				A2F789EA1707AB67000AA2AA /* OrthonormalBasis.cpp */,
-				A2F789EB1707AB67000AA2AA /* OrthonormalBasis.h */,
+				A2F789EA1707AB67000AA2AA /* ONB.cpp */,
+				A2F789EB1707AB67000AA2AA /* ONB.h */,
 				A20B1D8C1708190E003C2907 /* Random.cpp */,
 				A20B1D8D1708190E003C2907 /* Random.h */,
 				A20B1D8F17081CFB003C2907 /* Ray.cpp */,
@@ -153,6 +159,10 @@
 				A2771F221706CBF100BF28F0 /* Vector.h */,
 				A239DEC3170AA10300081951 /* Camera.cpp */,
 				A239DEC4170AA10300081951 /* Camera.h */,
+				A2D7704917100EFC00390A3B /* Sample.cpp */,
+				A2D7704A17100EFC00390A3B /* Sample.h */,
+				A203427C1711525B000B6E4A /* SolidNoise.cpp */,
+				A203427D1711525C000B6E4A /* SolidNoise.h */,
 			);
 			path = Raytracer;
 			sourceTree = "<group>";
@@ -213,7 +223,7 @@
 				A2771F241706CBF200BF28F0 /* Vector.cpp in Sources */,
 				A2771F271706CC3A00BF28F0 /* Matrix.cpp in Sources */,
 				A2F789E917076A30000AA2AA /* Image.cpp in Sources */,
-				A2F789EC1707AB67000AA2AA /* OrthonormalBasis.cpp in Sources */,
+				A2F789EC1707AB67000AA2AA /* ONB.cpp in Sources */,
 				A20B1D851707E09B003C2907 /* DynamicArray.cpp in Sources */,
 				A20B1D8E1708190E003C2907 /* Random.cpp in Sources */,
 				A20B1D9117081CFB003C2907 /* Ray.cpp in Sources */,
@@ -221,11 +231,13 @@
 				A20B1D97170821F8003C2907 /* HitRecord.cpp in Sources */,
 				A20B1D9A170822BB003C2907 /* Triangle.cpp in Sources */,
 				A20B1D9E170823F8003C2907 /* Sphere.cpp in Sources */,
-				A20B1DA1170826E5003C2907 /* AxisAlignedBoundingBox.cpp in Sources */,
+				A20B1DA1170826E5003C2907 /* AABB.cpp in Sources */,
 				A253515E1709090600C57A56 /* Plane.cpp in Sources */,
 				A253519117090DA700C57A56 /* Disc.cpp in Sources */,
 				A25351941709117100C57A56 /* Ring.cpp in Sources */,
 				A239DEC5170AA10300081951 /* Camera.cpp in Sources */,
+				A2D7704B17100EFC00390A3B /* Sample.cpp in Sources */,
+				A203427E1711525C000B6E4A /* SolidNoise.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

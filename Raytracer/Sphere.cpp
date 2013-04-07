@@ -14,9 +14,9 @@ Sphere::Sphere(const Vec3& center, const float& radius, const Color4f& color)
 	color(color)
 {}
 
-AxisAlignedBoundingBox Sphere::axisAlignedBoundingBox() const
+AABB Sphere::AABB() const
 {
-	return AxisAlignedBoundingBox();
+	return AABB();
 }
 
 bool Sphere::hit(const Ray& ray,
@@ -35,7 +35,7 @@ bool Sphere::hit(const Ray& ray,
 
 	if (discriminant > 0.0f)
 	{
-		//	TODO Switch tmin tmax if didn't work
+		//	TODO Switch tmin tmax if required
 		//tmin = projection - sqrt(discriminant);
 		//tmax = projection + sqrt(discriminant);
 		
@@ -74,7 +74,7 @@ bool Sphere::shadowHit(const Ray& ray,
 
 	if (discriminant > 0.0f)
 	{
-		//	TODO Switch tmin tmax if didn't work
+		//	TODO Switch tmin tmax if required
 		//tmin = projection - sqrt(discriminant);
 		//tmax = projection + sqrt(discriminant);
 

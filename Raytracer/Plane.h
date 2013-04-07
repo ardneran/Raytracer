@@ -15,7 +15,7 @@ class Plane : public Shape
 {
 public:
 	Plane(const Vec3& fixedPoint, const Vec3& normal, const Color4f& color);
-	AxisAlignedBoundingBox axisAlignedBoundingBox() const;
+	AABB AABB() const;
 	bool hit(const Ray& ray,
 			 const float& tmin,
 			 const float& tmax,

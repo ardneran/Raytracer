@@ -9,7 +9,7 @@
 #ifndef __Raytracer__Shape__
 #define __Raytracer__Shape__
 
-#include "AxisAlignedBoundingBox.h"
+#include "AABB.h"
 #include "Color.h"
 #include "HitRecord.h"
 #include "Ray.h"

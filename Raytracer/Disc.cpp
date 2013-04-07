@@ -18,9 +18,9 @@ Disc::Disc(const Vec3& center,
 	color(color)
 {}
 
-AxisAlignedBoundingBox Disc::axisAlignedBoundingBox() const
+AABB Disc::AABB() const
 {
-	return AxisAlignedBoundingBox();
+	return AABB();
 }
 
 bool Disc::hit(const Ray& ray,

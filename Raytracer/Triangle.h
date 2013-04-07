@@ -15,7 +15,7 @@ class Triangle : public Shape
 {
 public:
 	Triangle(const Vec3& a, const Vec3& b, const Vec3& c, const Color4f& color);
-	AxisAlignedBoundingBox axisAlignedBoundingBox() const;
+	AABB AABB() const;
 	bool hit(const Ray& ray,
 			 const float& tmin,
 			 const float& tmax,

@@ -15,7 +15,7 @@ class Sphere : public Shape
 {
 public:
 	Sphere(const Vec3& center, const float& radius, const Color4f& color);
-	AxisAlignedBoundingBox axisAlignedBoundingBox() const;
+	AABB AABB() const;
 	bool hit(const Ray& ray,
 			 const float& tmin,
 			 const float& tmax,

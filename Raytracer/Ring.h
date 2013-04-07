@@ -19,7 +19,7 @@ public:
 		 const float& innerRadius,
 		 const float& outerRadius,
 		 const Color4f& color);
-	AxisAlignedBoundingBox axisAlignedBoundingBox() const;
+	AABB AABB() const;
 	bool hit(const Ray& ray,
 			 const float& tmin,
 			 const float& tmax,

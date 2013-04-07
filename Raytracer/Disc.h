@@ -18,7 +18,7 @@ public:
 		 const Vec3& normal,
 		 const float& radius,
 		 const Color4f& color);
-	AxisAlignedBoundingBox axisAlignedBoundingBox() const;
+	AABB AABB() const;
 	bool hit(const Ray& ray,
 			 const float& tmin,
 			 const float& tmax,

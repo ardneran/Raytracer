@@ -20,9 +20,9 @@ Triangle::Triangle(const Vec3& a, const Vec3& b, const Vec3& c,
 	normal(cross(b - a, c - a).normal())
 {}
 
-AxisAlignedBoundingBox Triangle::axisAlignedBoundingBox() const
+AABB Triangle::AABB() const
 {
-	return AxisAlignedBoundingBox();
+	return AABB();
 }
 
 bool Triangle::hit(const Ray& ray,
