@@ -45,20 +45,15 @@ Color4f::Color4f(const Vec4 &v)
 	a(v.w)
 { }
 
-Color4f Color4f::clamp()
-{
-	return Color4f(r > 1.0f ? 1.0f : r < 0.0f ? 0.0f : r,
-				   g > 1.0f ? 1.0f : g < 0.0f ? 0.0f : g,
-				   b > 1.0f ? 1.0f : b < 0.0f ? 0.0f : b,
-				   a > 1.0f ? 1.0f : a < 0.0f ? 0.0f : a);
-}
-
 Color4f& Color4f::operator=(const Color4f &u)
 {
-	r = u.r;
-	g = u.g;
-	b = u.b;
-	a = u.a;
+	if (this != &u)
+	{
+		r = u.r;
+		g = u.g;
+		b = u.b;
+		a = u.a;
+	}
 	return *this;
 }
 
@@ -164,6 +159,14 @@ bool Color4f::operator==(const Color4f &u) const
 bool Color4f::operator!=(const Color4f &u) const
 {
 	return (r != u.r || g != u.g || b != u.b || a != u.a);
+}
+
+Color4f Color4f::clamp()
+{
+	return Color4f(r > 1.0f ? 1.0f : r < 0.0f ? 0.0f : r,
+				   g > 1.0f ? 1.0f : g < 0.0f ? 0.0f : g,
+				   b > 1.0f ? 1.0f : b < 0.0f ? 0.0f : b,
+				   a > 1.0f ? 1.0f : a < 0.0f ? 0.0f : a);
 }
 
 ostream& operator<<(ostream& out, const Color4f &u)

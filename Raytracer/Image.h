@@ -28,9 +28,9 @@ public:
 	void	writebmp(char* path);
 
 private:
-	Color4f** pixels;
 	int width;
 	int height;
+	Color4f** pixels;
 };
 
 #endif /* defined(__Raytracer__Image__) */

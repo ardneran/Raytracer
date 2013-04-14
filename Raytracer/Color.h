@@ -203,8 +203,6 @@ public:
 	Color4f(const Vec3 &v, const float &a = 1.0f);
 	Color4f(const Vec4 &v);
 
-	Color4f clamp();
-	
 	Color4f&	operator=(const Color4f &u);
 	Color4f		operator+(const Color4f &u) const;
 	Color4f		operator-(const Color4f &u) const;
@@ -227,6 +225,8 @@ public:
 	bool		operator!=(const Color4f &u) const;
 
 	//virtual   operator uint32t() {return data;};
+
+	Color4f clamp();
 
 	friend ostream& operator<<(ostream& out, const Color4f &u);
 };
